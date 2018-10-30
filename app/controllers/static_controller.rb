@@ -20,5 +20,8 @@ class StaticController < ApplicationController
     @Gossips = Potin.all
   end
 
+  def show
+    puts "vous avez cliquer sur le potin"
+  end
 
 end

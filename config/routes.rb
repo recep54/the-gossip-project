@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   get 'team', to:  'static#team'
   get 'contact', to: 'static#contact'
   get 'welcome/:prenom', to: 'static#welcome'
+  get 'welcome/team/:id', to: 'static#show'
     # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
