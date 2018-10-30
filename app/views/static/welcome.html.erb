@@ -18,3 +18,27 @@
 <h1>Welcome <%= @prenom %>  !</h1>
 
 <p>Quelle est votre </p>
+
+
+
+<h2>Voici les potins déjà existant </h2>
+<table>
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>Auteur</th>
+      <th>Potin</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @Gossips.each_with_index do |potin|%>
+      <tr>
+        <td><%= potin.id %><td>
+        <td><%= potin.author %></td>
+        <td><%= potin.content %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

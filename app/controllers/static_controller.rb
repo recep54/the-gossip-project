@@ -17,6 +17,8 @@ class StaticController < ApplicationController
 
   def welcome
     @prenom = params[:prenom].capitalize
+    @Gossips = Potin.all
   end
+
 
 end
